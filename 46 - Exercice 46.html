@@ -1,0 +1,82 @@
+<!--
+	La modification dynamique du style consiste à modifier le CSS d'un élément quand l'utilisateur effectue sur celui-ci une action.
+	Ainsi, on peut agir au survol de l'élément de la façon suivante
+	h1:hover{
+		color: red;
+	}
+	Au survol du h1, le texte de ce h1 devient rouge.
+	On appelle :hover une pseudo-classe.
+-->
+
+<!--
+	1 - Créez un document contenant trois paragraphes de 500 caractères minimum chaque.
+	2 - Au survol du premier, la couleur du fond de ce paragraphe change.
+	3 - Au survol du second, une bordure apparait sur celui-ci.
+	4 - Au survol du troisième, ce dernier a une largeur de 50% de la fenêtre et une hauteur de 50px. Attention, le reste du texte doit être masqué !
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="ex46.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p id="p1">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+
+	</p>
+	<p id="p2">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+
+	</p>
+	<p id="p3">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at aliquam nostrum perspiciatis unde aperiam amet quas saepe libero earum recusandae, totam, dolorum accusamus necessitatibus, laborum dolores voluptatem tenetur nam.
+
+	</p>
+	
+</body>
+</html>

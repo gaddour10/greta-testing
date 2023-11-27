@@ -1,0 +1,59 @@
+<!--
+Dans un tableau HTML, les balises <thead>, <tbody>, et <tfoot> sont utilisées pour spécifier différentes zones du tableau, chacune ayant un rôle spécifique :
+
+<thead> : 
+	Cette balise est utilisée pour grouper l'ensemble des lignes d'en-tête du tableau. 
+	Elle contient généralement une ou plusieurs lignes <tr> qui à leur tour contiennent des cellules d'en-tête (<th>).
+
+<tfoot> : 
+	Cette balise est destinée à grouper l'ensemble des lignes de pied de page du tableau. 
+	Les informations ici sont souvent des résumés ou des totaux des données présentées dans le tableau.
+
+<tbody> : 
+	Cette balise est utilisée pour grouper le corps principal du tableau, contenant la majorité des données.
+
+Dans l'ordre de déclaration, on débute par le thead, puis le tfoot et enfin le tbody.
+-->
+
+<!--
+	1 - Reprenez le tableau de l'exercice précédent 
+	2 - Mettez la première ligne en gras au moyen de la balise thead.
+	3 - Répétez les informations de la première ligne dans une autre ligne située à la base du tableau. Mettez également cette ligne en gras.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="ex44.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<table>
+		<thead>
+		<tr>
+		  <th>Ville</th>
+		  <th>Département</th>
+		  <th>Région</th>
+		</tr>
+	</thead>
+	  
+		<tr>
+		  <td>fresnes</td>
+		  <td>94</td>
+		  <td>hay de roses</td>
+		</tr>
+		<tr>
+		  <td>Lyon</td>
+		  <td>69</td>
+		  <td>je sais pas</td>
+		</tr>
+		<tfoot>
+			<th>Ville</th>
+			<th>Département</th>
+			<th>Région</th>
+	</tfoot>
+	  
+	</table>
+</body>
+</html>

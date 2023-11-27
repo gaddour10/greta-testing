@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'poppins-Bold';
+    src: url('/fonts/Poppins-Bold.otf');
+}
+
+body{
+    font-family: 'poppins-bold',Arial, Helvetica, sans-serif;
+    background-color: rgb(19, 19, 99) ;
+    
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+#teemo{
+    float: left;
+    
+}
+#teemo2{
+    float: right;
+    
+}
+#center{
+    background-color: rgb(173, 217, 234);
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: -25px;
+    margin-bottom: -25px;
+    padding: 20px 20px 20px 20px;
+}
+h1{
+    background-color: rgb(170, 120, 120);
+    width: fit-content;
+    padding :20px 100px 20px 100px;
+}

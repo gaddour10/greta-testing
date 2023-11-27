@@ -1,0 +1,111 @@
+<!--
+L'élément textarea en HTML permet d'intégrer un champ de saisie à plusieurs lignes dans un formulaire. 
+Il est utilisé pour collecter des données textuelles plus longues que ce qui est généralement saisi dans un champ de texte simple.
+Par exemple, il est souvent utilisé pour les commentaires, les messages ou d'autres types de saisies de texte plus longues.
+
+L'élément select représente un menu déroulant avec des options. 
+Il permet aux utilisateurs de sélectionner une option parmi plusieurs. 
+Cet élément est souvent utilisé pour les listes déroulantes, telles que les listes de choix de pays, de langues, de catégories, etc.
+
+Deux types d'input permettent de créer une liste de choix :
+	checkbox : 
+		les cases à cocher permettent aux utilisateurs de sélectionner plusieurs options parmi un ensemble de choix.
+	radio : 
+		les boutons radio permettent aux utilisateurs de sélectionner une seule option parmi un ensemble de choix.
+Ces éléments sont des composants essentiels pour la création de formulaires interactifs
+-->
+
+<!--
+	1 - Réalisez un document contenant un formulaire
+	2 - En-dehors des éléments de base, ce formulaire comprend cinq champs input de type text :
+		_ prénom
+		_ nom
+		_ voie
+		_ code postal
+		_ ville
+	3 - Ajoutez des labels pour chaque champ	
+	4 - Ajoutez les champs suivants (avec les labels):
+		_ téléphone
+		_ email
+		_ date de naissance
+		_ site web
+	5 - Ouvrez cette page dans différents navigateurs.
+	6 - Ajoutez les champs suivants (avec les labels):
+		_ titre (sélection : M, Mme, Mlle).
+		_ type de téléphone (sélection : fixe, mobile).
+		_ commentaire (texte long à saisir).
+		_ centres d'intérêts (choix multiple possible).
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form method="post">
+		<label for="prénom">prénom</label>
+		<input type="text" name="prénom" id="prénom"> <br>
+
+		<label for="nom">nom</label>
+		<input type="text" name="nom" id="nom"><br>
+
+		<label for="voie">voie</label>
+		<input type="text" name="voie" id="voie"> <br>
+
+		<label for="CodePostal">code postal</label>
+		<input type="text" name="voie" id="code postal"><br>
+
+		<label for="ville">ville</label>
+		<input type="text" name="ville" id="ville"><br>
+
+		<label for="telephone">telephone</label>
+		<input type="tel" name="telephone" id="telephone"><br>
+
+		<label for="email">email</label>
+		<input type="email" name="email" id="email"><br>
+
+		<label for="date de naissance">date de naissance</label>
+		<input type="date" name="date de naissance" id="date de naissance"><br>
+
+		<label for="site">site web</label>
+		<input type="url" name="site web" id="site web"><br>
+
+		<div>
+			<label for="titre">Titre :</label>
+			<select id="titre" name="titre" >
+			  <option value="M">M.</option>
+			  <option value="Mme">Mme</option>
+			  <option value="Mlle">Mlle</option>
+			</select>
+		  </div>
+		  <div>
+			<label for="type de téléphone">type de téléphone:</label>
+			<select name="type de téléphone" id="type de téléphone">
+				<option value="fixe">fixe</option>
+				<option value="mobile">mobile</option>
+			</select>
+		  </div>
+		  <div>
+			<label for="commentaire">commentaire:</label><br>
+			<textarea name="commentaire" id="commentaire" cols="30" rows="10"></textarea>
+		  </div>
+		  <div>
+			<label for="centres d'interets">centres d'interets:</label> <br>
+			<input type="checkbox" name="guitar" id="guitar">
+			<label for="guitar">guitar</label>
+			<input type="checkbox" name="gaming" id="gaming">
+			<label for="gaming">gaming</label>
+			<input type="checkbox" name="music" id="music">
+			<label for="music">music</label>
+
+		</div>
+		
+
+
+		
+	</form>
+	
+</body>
+</html>

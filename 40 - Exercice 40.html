@@ -1,0 +1,88 @@
+<!--
+	Lorsque le formulaire comprend de nombreux champs, il est possible de les regrouper en plusieurs ensembles 
+	La balise HTML <fieldset> est utilisée pour regrouper des éléments connexes au sein d'un formulaire. 
+	Cette balise crée un ensemble avec une bordure autour des éléments, rendant le formulaire plus organisé et visuellement attrayant. 
+	Elle est particulièrement utile dans les formulaires comprenant de nombreux champs, car elle permet de les structurer en sections thématiques ou logiques. 
+	Cette organisation aide l'utilisateur à mieux comprendre les différentes parties du formulaire et facilite la saisie des informations.
+-->
+<!-- https://www.w3schools.com/tags/tag_fieldset.asp -->
+<!--
+	1 - Reprenez le formulaire de l'exercice précédent.
+	2 - Regroupez le contenu en plusieurs ensembles avec balise fieldset
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="ex40.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form method="post">
+		<fieldset>
+			<legend>cordonnées:</legend>
+		<label for="prénom">prénom</label>
+		<input type="text" name="prénom" id="prénom"> <br>
+
+		<label for="nom">nom</label>
+		<input type="text" name="nom" id="nom"><br>
+
+		<label for="voie">voie</label>
+		<input type="text" name="voie" id="voie"> <br>
+
+		<label for="CodePostal">code postal</label>
+		<input type="text" name="voie" id="code postal"><br>
+
+		<label for="ville">ville</label>
+		<input type="text" name="ville" id="ville"><br>
+
+		<label for="telephone">telephone</label>
+		<input type="tel" name="telephone" id="telephone"><br>
+
+		<label for="email">email</label>
+		<input type="email" name="email" id="email"><br>
+
+		<label for="date de naissance">date de naissance</label>
+		<input type="date" name="date de naissance" id="date de naissance"><br>
+
+		<label for="site">site web</label>
+		<input type="url" name="site web" id="site web"><br>
+	</fieldset>
+	<fieldset>
+		<legend>informations complémentaires</legend>
+		<div>
+			<label for="titre">Titre :</label>
+			<select id="titre" name="titre" >
+			  <option value="M">M.</option>
+			  <option value="Mme">Mme</option>
+			  <option value="Mlle">Mlle</option>
+			</select>
+		  </div>
+		  <div>
+			<label for="type de téléphone">type de téléphone:</label>
+			<select name="type de téléphone" id="type de téléphone">
+				<option value="fixe">fixe</option>
+				<option value="mobile">mobile</option>
+			</select>
+		  </div>
+		  <div>
+			<label for="commentaire">commentaire:</label><br>
+			<textarea name="commentaire" id="commentaire" cols="30" rows="10"></textarea>
+		  </div>
+		  <div>
+			<label for="centres d'interets">centres d'interets:</label> <br>
+			<input type="checkbox" name="guitar" id="guitar">
+			<label for="guitar">guitar</label>
+			<input type="checkbox" name="gaming" id="gaming">
+			<label for="gaming">gaming</label>
+			<input type="checkbox" name="music" id="music">
+			<label for="music">music</label>
+
+		</div>
+	</fieldset>
+		</form>
+	
+	
+</body>
+</html>
